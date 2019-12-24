@@ -1,0 +1,100 @@
+* {
+  outline: 0;
+  font-family: sans-serif
+}
+html {
+    background: #e6e9e9;
+    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    -webkit-font-smoothing: antialiased;
+}
+body {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+}
+td {
+    width: 50px;
+}
+td > input {
+    width: 50px;
+    font: "Times New Roman";
+    font-style: italic; 
+    font-size: 14px;
+    color: #545454;
+}
+button {
+    border-radius: 6px;
+    padding: 0px 15px;
+	line-height: 34px;
+	border: 1px solid #999;
+    background-color: #fff;
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 10px
+}
+
+#resetButton {
+    border-radius: 6px;
+    padding: 0px 15px;
+	line-height: 34px;
+	border: 1px solid #999;
+    background-color: #fff;
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 10px
+}
+
+/* Hover */
+button:hover {
+	color: #666;
+    background: #f3f3f3;
+}
+
+.form_radio_group {
+	display: inline-block;
+	overflow: hidden;
+}
+.form_radio_group-item {
+	display: inline-block;
+	float: left;    
+}
+.form_radio_group input[type=radio] {
+	display: none;
+}
+.form_radio_group label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border: 1px solid #999;
+	border-right: none;
+	user-select: none;
+}
+ 
+.form_radio_group .form_radio_group-item:first-child label {
+	border-radius: 6px 0 0 6px;
+}
+.form_radio_group .form_radio_group-item:last-child label {
+	border-radius: 0 6px 6px 0;
+	border-right: 1px solid #999;
+}
+ 
+/* Checked */
+.form_radio_group input[type=radio]:checked + label {
+	background: #e6e6e6;
+}
+ 
+/* Hover */
+.form_radio_group label:hover {
+	color: #666;
+    background: #f3f3f3;
+}
+ 
